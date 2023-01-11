@@ -1,6 +1,6 @@
 # Passo 1 - Importar a Base de Dados
 import pandas as pd
-tabela = pd.read_csv(r"../Aula2/telecom_users.csv")
+tabela = pd.read_csv('telecom_users.csv')
 # Passo 2 - Visualizar a Base de Dados
 # display(tabela)
 print(tabela)
