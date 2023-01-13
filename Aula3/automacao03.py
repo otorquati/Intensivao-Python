@@ -2,7 +2,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-
 driver = webdriver.Edge()
 
 # Passo 1 - Pegar a cotação do dólar
@@ -48,4 +47,3 @@ driver.quit()
 # Passo 5 - Recalcular os preços
 
 # Passo 6 - Exportar a base atualizada
-
