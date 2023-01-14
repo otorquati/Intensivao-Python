@@ -1,7 +1,7 @@
 # Passo 1 - Importar a Base de Dados
 import plotly.express as px
 import pandas as pd
-tabela = pd.read_csv(r"C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula 2\telecom_users.csv")
+tabela = pd.read_csv(r"C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula2\telecom_users.csv")
 # Passo 2 - Visualizar a Base de Dados
 # display(tabela)
 print(tabela.info())
