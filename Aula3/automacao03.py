@@ -43,7 +43,7 @@ print(cotacao_ouro)
 driver.quit()
 
 # Passo 4 - Importar a base de dados e atualizar a base
-tabela = pd.read_excel(r'C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula3\Produtos.xlsx')
+tabela = pd.read_excel(r'C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula 3\Produtos.xlsx')
 print(tabela)
 # Passo 5 - Recalcular os preços
 tabela.loc[tabela['Moeda'] =='Dólar','Cotação']= float(cotacao_dolar)
@@ -53,5 +53,5 @@ tabela.loc[tabela['Moeda'] =='Ouro','Cotação']= float(cotacao_ouro)
 tabela['Preço de Compra']=tabela['Cotação']*tabela['Preço Original']
 tabela['Preço de Venda']=tabela['Preço de Compra']*tabela['Margem']
 # Passo 6 - Exportar a base atualizada
-tabela.to_excel(r'C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula3\Produtos_Update.xlsx',index=False)
+tabela.to_excel(r'C:\Users\Dj Thor\Meus Projetos\Intensivao-Python\Aula 3\Produtos_Update.xlsx',index=False)
 print(tabela)
